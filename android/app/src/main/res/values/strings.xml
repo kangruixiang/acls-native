@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Awesome Code Recorder</string>
+    <string name="title_activity_main">Awesome Code Recorder</string>
+    <string name="package_name">awesome.code.recorder.io</string>
+    <string name="custom_url_scheme">awesome.code.recorder.io</string>
+</resources>

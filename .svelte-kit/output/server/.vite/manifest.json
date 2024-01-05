@@ -1,0 +1,137 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_Button.js": {
+    "file": "chunks/Button.js",
+    "imports": [
+      "_main-client.js",
+      "_index.js",
+      "_index2.js"
+    ]
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_index2.js",
+      "_main-client.js"
+    ]
+  },
+  "_main-client.js": {
+    "file": "chunks/main-client.js",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_platform.js": {
+    "css": [
+      "_app/immutable/assets/platform.Tz7HYKiE.css"
+    ],
+    "file": "chunks/platform.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_utils.js": {
+    "file": "chunks/utils.js"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@2.0.6_@sveltejs+vite-plugin-svelte@3.0.1_svelte@5.0.0-next.28_vite@5.0.10/node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_main-client.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/@sveltejs+kit@2.0.6_@sveltejs+vite-plugin-svelte@3.0.1_svelte@5.0.0-next.28_vite@5.0.10/node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@2.0.6_@sveltejs+vite-plugin-svelte@3.0.1_svelte@5.0.0-next.28_vite@5.0.10/node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/.pnpm/@sveltejs+kit@2.0.6_@sveltejs+vite-plugin-svelte@3.0.1_svelte@5.0.0-next.28_vite@5.0.10/node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/routes/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/_layout.fGMAXWm1.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_platform.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.ts"
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/home/+page.svelte": {
+    "file": "entries/pages/home/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_Button.js",
+      "_index.js",
+      "_utils.js",
+      "_main-client.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/home/+page.svelte"
+  },
+  "src/routes/i/[slug]/+page.svelte": {
+    "file": "entries/pages/i/_slug_/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_Button.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/i/[slug]/+page.svelte"
+  },
+  "src/routes/i/[slug]/+page.ts": {
+    "file": "entries/pages/i/_slug_/_page.ts.js",
+    "isEntry": true,
+    "src": "src/routes/i/[slug]/+page.ts"
+  },
+  "src/routes/recordList/+page.svelte": {
+    "file": "entries/pages/recordList/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_utils.js",
+      "_Button.js",
+      "_platform.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/recordList/+page.svelte"
+  },
+  "src/routes/recordList/+page.ts": {
+    "file": "entries/pages/recordList/_page.ts.js",
+    "isEntry": true,
+    "src": "src/routes/recordList/+page.ts"
+  }
+}
