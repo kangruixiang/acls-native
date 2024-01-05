@@ -13,9 +13,9 @@ function _layout($$payload, $$props) {
   push(false);
   setupIonicBase();
   const anchor = create_anchor($$payload);
-  $$payload.out += `<ion-app>${anchor}`;
+  $$payload.out += `<ion-app><div class="pt-[env(safe-area-inset-top)] bg-primary">${anchor}`;
   slot($$payload, $$props.children, {}, null);
-  $$payload.out += `${anchor}</ion-app>`;
+  $$payload.out += `${anchor}</div></ion-app>`;
   pop();
 }
 export {

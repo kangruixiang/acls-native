@@ -530,7 +530,7 @@ function MedRow($$payload, $$props) {
     } else {
       $$payload.out += "<!--ssr:if:false-->";
     }
-    $$payload.out += `${anchor_2} ${escape(seconds >= 10 ? seconds : "0" + seconds)} s</div> <div class="flex cursor-pointer items-center">Reset Timer</div></div>`;
+    $$payload.out += `${anchor_2} ${escape(seconds >= 10 || seconds < 0 ? seconds : "0" + seconds)} s</div> <div class="flex cursor-pointer items-center">Reset Timer</div></div>`;
   } else {
     $$payload.out += "<!--ssr:if:false-->";
   }
@@ -908,7 +908,7 @@ function Countdown($$payload, $$props) {
   let minutes = $$props["minutes"];
   let seconds = $$props["seconds"];
   let className = value_or_fallback($$props["class"], void 0);
-  $$payload.out += `<div${attr("class", twMerge("mx-4 flex flex-col gap-2", className), false)}><h2 class="text-neutral-100">Total Code Time</h2> <div class="min-w-[80%] rounded-md bg-white px-4 py-8 text-center text-5xl"><strong>${escape(minutes)} min ${escape(seconds >= 10 ? seconds : "0" + seconds)} sec</strong></div></div>`;
+  $$payload.out += `<div${attr("class", twMerge("mx-4 flex flex-col gap-2", className), false)}><h2 class="text-neutral-100">Total Code Time</h2> <div class="min-w-[80%] rounded-md bg-white px-4 py-8 text-center text-5xl"><strong>${escape(minutes)} min ${escape(seconds >= 10 || seconds < 0 ? seconds : "0" + seconds)} sec</strong></div></div>`;
   bind_props($$props, { minutes, seconds, class: className });
   pop();
 }

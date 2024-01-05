@@ -33,8 +33,19 @@
 } */
 
 body {
-	min-height: 100vh;
 	margin: 0;
+}
+
+.top-safe-cover {
+  height: env(safe-area-inset-top);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+}
+
+.safe-area-padding {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 
@@ -111,7 +122,7 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-b from-primary to-[#324572] text-neutral-100;
+    @apply bg-gradient-to-b from-primary to-[#324572] text-neutral-100 safe-area-padding;
   }
 }
 
