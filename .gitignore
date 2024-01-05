@@ -1,3 +1,9 @@
+# Misc
+.svelte-kit/
+android/
+build/
+ios/
+
 # Logs
 logs
 *.log
