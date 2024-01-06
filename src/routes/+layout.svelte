@@ -46,6 +46,6 @@
 	*/
 </script>
 
-<ion-app class="pt-[env(safe-area-inset-top)]">
-		<slot />
+<ion-app class="mx-auto max-w-3xl pt-[env(safe-area-inset-top)]">
+	<slot />
 </ion-app>
