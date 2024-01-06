@@ -1,8 +1,8 @@
 # Misc
 .svelte-kit/
-android/
-build/
-ios/
+# android/
+# build/
+# ios/
 
 # Logs
 logs
