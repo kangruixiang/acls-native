@@ -23,7 +23,8 @@
 	};
 </script>
 
-<div class="flex flex-col gap-10 overflow-y-auto px-4 py-8">
+<!-- <ion-content> -->
+<div class="flex h-full flex-col gap-10 overflow-y-auto px-4 py-8">
 	<div>
 		{@html data.record.value}
 	</div>
@@ -36,3 +37,4 @@
 		>
 	</div>
 </div>
+<!-- </ion-content> -->

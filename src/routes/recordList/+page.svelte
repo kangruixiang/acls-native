@@ -48,7 +48,8 @@
 	};
 </script>
 
-<div class="mx-2 my-2 flex flex-col justify-end gap-4 overflow-y-auto">
+<!-- <ion-content> -->
+<div class="h-full mx-2 my-2 flex flex-col justify-start gap-4 overflow-y-auto">
 	<Table.Root>
 		<Table.Header>
 			<Table.Row>
@@ -71,5 +72,6 @@
 				</Table.Row>{/each}
 		</Table.Body>
 	</Table.Root>
-	<Button on:click={() => goto('/home')}>Back to Codes</Button>
+	<Button class="self-end" on:click={() => goto('/home')}>Back to Codes</Button>
 </div>
+<!-- </ion-content> -->

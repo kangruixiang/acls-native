@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Preferences } from '@capacitor/preferences';
+	import { IonPage } from 'ionic-svelte';
 	import * as Tabs from '$lib/components/ui/tabs';
 	import {
 		Button,
@@ -43,7 +44,6 @@
 			time: Date.now()
 		};
 
-		console.log($codeEnd);
 		await Preferences.set({
 			key: codeStartTime.toString(),
 			value: summary.innerHTML
@@ -59,7 +59,11 @@
 	});
 </script>
 
-<div class=" flex flex-col gap-4 overflow-y-auto pt-8">
+<!-- <IonPage> -->
+	<!-- <ion-content> -->
+
+	
+<div class="h-full flex flex-col gap-4 overflow-y-auto pt-8">
 	{#if !codeStartTime}
 		<Initial bind:codeStartTime bind:pause />
 	{/if}
@@ -137,3 +141,5 @@
 		</Tabs.Root>
 	{/if}
 </div>
+<!-- </ion-content> -->
+<!-- </IonPage> -->

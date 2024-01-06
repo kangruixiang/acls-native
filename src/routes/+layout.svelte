@@ -46,8 +46,6 @@
 	*/
 </script>
 
-<ion-app>
-	<div class="pt-[env(safe-area-inset-top)] bg-primary">
+<ion-app class="pt-[env(safe-area-inset-top)]">
 		<slot />
-	</div>
 </ion-app>
