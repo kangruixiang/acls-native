@@ -1,38 +1,24 @@
-# create-svelte
+# Awesome Code Recorder
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Run better codes with this recorder
 
-## Creating a project
+- You are more likely to walk into a code minutes later than being there when it starts. This app allows you to add the initial time: 
 
-If you're seeing this, you've probably already done this step. Congrats!
+![](./resources/screenshot_initial.png)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Clean overview with timer and countdown
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+![](./resources/screenshot_overview.png)
+![](./resources/screenshot_overview2.png)
 
-## Developing
+- H's and T's page for reversible causes
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+![](./resources/screenshot_ht.png)
 
-```bash
-npm run dev
+- Pause and restart codes
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+![](./resources/screenshot_end.png)
 
-## Building
+- Copy code summary 
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+![](./resources/screenshot_detail.png)

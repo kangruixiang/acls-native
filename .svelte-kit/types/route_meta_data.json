@@ -10,6 +10,9 @@
 		"src/routes/i/[slug]/+page.ts",
 		"src/routes/+layout.ts"
 	],
+	"/privacy": [
+		"src/routes/+layout.ts"
+	],
 	"/recordList": [
 		"src/routes/recordList/+page.ts",
 		"src/routes/+layout.ts"

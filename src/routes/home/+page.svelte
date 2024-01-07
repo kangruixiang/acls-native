@@ -60,10 +60,9 @@
 </script>
 
 <!-- <IonPage> -->
-	<!-- <ion-content> -->
+<!-- <ion-content> -->
 
-	
-<div class="h-full flex flex-col gap-4 overflow-y-auto pt-8">
+<div class="flex h-full flex-col gap-4 overflow-y-auto pt-8">
 	{#if !codeStartTime}
 		<Initial bind:codeStartTime bind:pause />
 	{/if}
@@ -98,13 +97,9 @@
 							</div>
 						</MedRow>
 
-						<MedRow time={180} bind:pause let:epiCountDown class="bg-[#324572] pt-4 "
+						<MedRow time={240} bind:pause let:epiCountDown class="bg-[#324572] pt-4 "
 							><svelte:fragment slot="title">Drugs and Shocks</svelte:fragment>
 							<Button on:click={() => epiCountDown('epi')}>Epinephrine</Button>
-							<div class="flex gap-2">
-								<Button grow on:click={() => epiCountDown('amio')}>Amiodarone</Button>
-								<Button grow on:click={() => epiCountDown('lido')}>Lidocaine</Button>
-							</div>
 						</MedRow>
 
 						<MedRow
@@ -114,7 +109,11 @@
 							let:epiCountDown
 							class="bg-[#324572] pb-12"
 						>
-							<div class="flex w-full">
+							<div class="flex w-full flex-col gap-2">
+								<div class="flex gap-2">
+									<Button grow on:click={() => epiCountDown('amio')}>Amiodarone</Button>
+									<Button grow on:click={() => epiCountDown('lido')}>Lidocaine</Button>
+								</div>
 								<Button grow color="yellow" on:click={() => epiCountDown('shock')}>Shock</Button>
 							</div>
 						</MedRow>
