@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { Button } from '$lib/components/index';
+	import { Button, Footer } from '$lib/components/index';
 	import Separator from './ui/separator/separator.svelte';
 
 	let { codeStartTime, pause } = $props();
@@ -60,4 +60,5 @@
 		<Separator></Separator>
 		<Button on:click={() => goto('/recordList')}>Previous Codes</Button>
 	</div>
+	<Footer />
 </div>

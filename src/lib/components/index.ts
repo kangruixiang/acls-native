@@ -7,6 +7,7 @@ export { default as Summary } from './Summary.svelte'
 export { default as Initial } from './Initial.svelte'
 export { default as HTCard } from './HTCard.svelte'
 export { default as Countdown } from './Countdown.svelte'
+export { default as Footer } from './Footer.svelte'
 
 export const amio = writable([])
 export const lido = writable([])
